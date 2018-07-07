@@ -47,7 +47,7 @@ div.answers
   p
     font-size: 1em
 
-.good-practices
+.added
   background-color: $color-gold
   background-image: image-url("bg-img1@2x.png")
   background-position: bottom left
@@ -70,7 +70,7 @@ div.answers
       color: $color-white
       text-decoration: underline
 
-div.bad-practices
+div.changed
   color: $color-white
   background-color: $color-bark
   background-image: image-url("bg-img2@2x.png")
@@ -103,7 +103,7 @@ div.bad-practices
     clear: left
     font-size: 1em
 
-div.effort
+div.removed
   padding-top: 2em
   padding-left: 5%
   padding-right: 5%
@@ -113,44 +113,6 @@ div.effort
     font-size: 1.6em
     font-weight: bold
     color: $color-ocre
-
-div.frequently-asked-questions
-  padding-top: 2em
-  padding-left: 5%
-  padding-right: 5%
-  background-color: $color-white
-
-  h2
-    color: $color-ocre
-
-  h3
-    color: $color-ocre
-    margin-bottom: 1.5em
-    font-size: 1.7em
-
-  h4
-    cursor: pointer
-    border-bottom: 1px solid transparentize($color-bark, 0.8)
-    padding: 0 1.1em 1.3em 0
-
-    &:after
-      content: "⌄"
-      text-align: right
-      float: right
-      font-size: 2.8em
-      line-height: 0.4
-      margin-right: -0.3em
-
-
-    &.is-visible:after
-      content: "-"
-
-  h4 ~ p
-    display: none
-    font-size: 0.9em
-
-  h4 ~ p.is-visible
-    display: inherit
 
 .footer
   font-size: .6em
@@ -177,25 +139,14 @@ div.frequently-asked-questions
     padding-left: 25%
     padding-right: 25%
 
-  div.effort
+  div.added
     padding-left: 25%
     padding-right: 25%
 
-  div.frequently-asked-questions
+  div.changed
     padding-left: 25%
     padding-right: 25%
 
-  .good-practices
-    h3
-      width: 50%
-    h4
-      padding-left: 15em
-    ul
-      padding-left: 16em
-
-  .bad-practices
-    h3
-      width: 35%
-
-    h4, p
-      padding-left: 12em
+  div.removed
+    padding-left: 25%
+    padding-right: 25%

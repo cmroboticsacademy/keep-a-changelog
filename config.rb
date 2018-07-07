@@ -10,89 +10,13 @@ $last_version = $versions.last
 $previous_version = $versions[$versions.index($last_version) - 1]
 
 # This list of languages populates the language navigation.
-issues_url = 'https://github.com/olivierlacan/keep-a-changelog/issues'
+issues_url = 'https://github.com/cmroboticsacademy/keep-a-changelog/issues'
 $languages = {
-  "cs"    => {
-    name: "Čeština"
-  },
-  "de"    => {
-    name: "Deutsch",
-    notice: "Die neuste version (#{$last_version}) ist noch nicht auf Deutsch
-    verfügbar, aber du kannst sie dir <a href='/en/'>auf Englisch durchlesen</a>
-    und <a href='#{issues_url}'>bei der Übersetzung mithelfen</a>."
-  },
   "en"    => {
     default: true,
     name: "English",
     new: "A new version is available"
-  },
-  "es-ES" => {
-    name: "Español",
-    notice: "La última versión (#{$last_version}) aun no está disponible en
-    Español, por ahora puedes <a href='/en/'>leerla en Inglés</a> y
-    <a href='#{issues_url}'>ayudar a traducirla</a>."
-  },
-  "fr"    => {
-    name: "Français",
-    notice: "La dernière version (#{$last_version}) n'est pas encore disponible
-    en français, mais vous pouvez la <a href='/en/'>lire en anglais</a> pour
-    l'instant et <a href='#{issues_url}'>aider à la traduire</a>.",
-    new: "Une nouvelle version est disponible"
-  },
-  "id-ID" => {
-    name: "Indonesia",
-    new: "Ada versi baru tersedia"
-  },
-  "it-IT" => {
-    name: "Italiano",
-    notice: "L'ultima versione (#{$last_version}) non è ancora disponibile in
-    Italiano, ma la potete <a href='/en/'>leggere in Inglese</a> per ora e
-    potete <a href='#{issues_url}'>contribuire a tradurla</a>."
-  },
-  "nl" => {
-    name: "Nederlands"
-  },
-  "pl" => {
-    name: "polski"
-  },
-  "pt-BR" => {
-    name: "Português do Brasil",
-    notice: "A última versão (#{$last_version}) ainda não está disponível em
-    Português mas nesse momento você pode <a href='/en/'>lê-la em inglês</a> e
-    <a href='#{issues_url}'>ajudar em sua tradução</a>."
-  },
-  "ru"    => {
-    name: "Pyccкий",
-    notice: "Самая последняя версия (#{$last_version}) ещё пока не переведена на
-    русский, но вы можете <a href='/en/'>прочитать её на английском</a> и <a
-    href='#{issues_url}'>помочь с переводом</a>."
-  },
-  "sk"    => {
-    name: "Slovenčina"
-  },
-  "sl"    => {
-    name: "Slovenščina"
-  },
-  "sv"    => {
-    name: "Svenska",
-    notice: "Den senaste versionen (#{$last_version}) är ännu inte tillgänglig på Svenska,
-    men du kan <a href='/en/'>läsa det på engelska</a> och även <a
-    href='#{issues_url}'>hjälpa till att översätta det</a>."
-  },
-  "tr-TR" => {
-    name: "Türkçe"
-  },
-  "zh-CN" => {
-    name: "简体中文",
-    notice: "最新版 (#{$last_version}) 暂时还没有翻译到简体中文，您可以阅读最新的英语版，并且帮助翻译，不胜感激。"
-  },
-  "zh-TW" => {
-    name: "正體中文",
-    notice: "最新版 (#{$last_version}) 暫時還沒有翻譯到正體中文，您可以閱讀最新的英語版，並且幫助翻譯，不勝感激。"
-  },
-  "ko" => {
-    name: "한국어"
-  } 
+  }
 }
 
 activate :i18n,
@@ -101,7 +25,7 @@ activate :i18n,
 
 set :gauges_id, ''
 set :publisher_url, 'https://www.facebook.com/olivier.lacan.5'
-set :site_url, 'https://keepachangelog.com'
+set :site_url, 'https://changelog.cs2n.org'
 
 redirect "index.html", to: "en/#{$last_version}/index.html"
 

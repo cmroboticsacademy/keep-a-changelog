@@ -42,7 +42,7 @@
     %article
       %header{ role: "banner" }
         - if latest_version
-          = image_tag "keep-a-changelog-mark.svg", width: 100, class: "mark"
+          = image_tag "logo_cs-stemColorSma.png", width: 100, class: "mark"
         %nav.locales{ role: "navigation" }
           %select
             - $languages.each do |language|
@@ -75,18 +75,18 @@
         = yield
 
         %footer.footer.clearfix{ role: "banner" }
-          = image_tag "keep-a-changelog-mark.svg", width: 30, class: "mark"
+          = image_tag "logo_cs-stemColorSma.png", width: 30, class: "mark"
 
           %p.about
             This project is
-            = link_to "MIT Licensed", "http://choosealicense.com/licenses/mit/"
-            \ //
-            = link_to "Created & maintained", "https://github.com/olivierlacan/keep-a-changelog/"
+            = link_to "Created & maintained", "https://github.com/cmroboticsacademy/keep-a-changelog/"
             by
-            = link_to "Olivier Lacan", "http://olivierlacan.com/"
+            = link_to "Carnegie Mellon Robotics Academy", "https://www.cmu.edu/roboticsacademy/"
             \ //
-            Designed by
-            = link_to "Tyler Fortune", "http://tylerfortune.me/"
+            Special thanks to
+            = link_to "Keep A Changelog", "https://keepachangelog.com/"
+            by
+            = link_to "Olivier Lacan", "https://olivierlacan.com/"
 
   - unless config.gauges_id.blank?
     :javascript

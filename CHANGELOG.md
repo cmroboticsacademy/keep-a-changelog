@@ -8,10 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2017-06-20
 ### Added
-- New visual identity by @tylerfortune8.
+- Generate Accounts - Student Roster Screen. This page displays pending student accounts with data validation errors that need to be fixed before student accounts can successfully be imported.
+- Generate Accounts - Student roster data for existing accounts is now overwritten. This opens up the possibility for teachers to update passwords, usernames, and any other data that is available for edit on the student roster sheet.
 
 ### Changed
-- Start using "changelog" over "change log" since it's the common usage.
+- Certificate Tracks - Exam lock feature. Exam is unlocked by default when a certificate has no associated badges.
 
 ### Removed
-- Section about "changelog" vs "CHANGELOG".
+- Generate Accounts - Randomly generated accounts and passwords.
+- Generate Accounts - Support for xls files.
